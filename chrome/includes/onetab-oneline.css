@@ -1,0 +1,15 @@
+/* To enforce one-line on a single tab all the time
+ * When the window is shrunk, cascade would stack the
+ * URL bar and tab bar to form 2 lines again.
+ *
+ * This will hide the tab bar altogether if there is only
+ * a single tab in the window. e.g. This gives us a very
+ * slick and clean interface with 2 single-page windows are
+ * tiled side-by-side */
+
+@media not (min-width: 1000px) {
+  /* Completely collapse the tabs area if there is exactly one tab */
+  #tabbrowser-tabs:has(.tabbrowser-tab:only-of-type) {
+    visibility: collapse !important;
+  }
+}

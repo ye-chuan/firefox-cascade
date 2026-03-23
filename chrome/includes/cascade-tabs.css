@@ -148,7 +148,7 @@
 
 /* selected tab colour fix */
 .tabbrowser-tab[selected] .tab-background {
-  background-color: var(--uc-highlight-colour) !important;
+  background-color: var(--uc-selected-tab) !important;
   outline: none !important;
 }
 .tab-background {

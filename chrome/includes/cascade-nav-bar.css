@@ -29,10 +29,15 @@
   background: var(--toolbar-field-background-color) !important;
 }
 
+/* The background of the hovered / selected entry in the URL bar dropdown
+ * BUG: --toolbar-field-focus-background-color is used by firefox for the
+ * background of the entire dropdown, causing camouflage */
+/*
 .urlbarView-row:hover > .urlbarView-row-inner,
 .urlbarView-row[selected] > .urlbarView-row-inner {
   background: var(--toolbar-field-focus-background-color) !important;
 }
+*/
 
 .urlbar-icon,
 #urlbar-go-button {

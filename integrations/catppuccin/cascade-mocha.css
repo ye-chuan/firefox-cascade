@@ -4,45 +4,107 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    /* Catppuccin Mocha Colours */
+    --catppuccin-rosewater: #f5e0dc;
+    --catppuccin-flamingo: #f2cdcd;
+    --catppuccin-pink: #f5c2e7;
+    --catppuccin-mauve: #cba6f7;
+    --catppuccin-red: #f38ba8;
+    --catppuccin-maroon: #eba0ac;
+    --catppuccin-peach: #fab387;
+    --catppuccin-yellow: #f9e2af;
+    --catppuccin-green: #a6e3a1;
+    --catppuccin-teal: #94e2d5;
+    --catppuccin-sky: #89dceb;
+    --catppuccin-sapphire: #74c7ec;
+    --catppuccin-blue: #89b4fa;
+    --catppuccin-lavender: #b4befe;
+    --catppuccin-text: #cdd6f4;
+    --catppuccin-subtext1: #bac2de;
+    --catppuccin-subtext0: #a6adc8;
+    --catppuccin-overlay2: #9399b2;
+    --catppuccin-overlay1: #7f849c;
+    --catppuccin-overlay0: #6c7086;
+    --catppuccin-surface2: #585b70;
+    --catppuccin-surface1: #45475a;
+    --catppuccin-surface0: #313244;
+    --catppuccin-base: #1e1e2e;
+    --catppuccin-mantle: #181825;
+    --catppuccin-crust: #11111b;
+
     /* These colours are (mainly) used by the
      Container Tabs Plugin */
-    --uc-identity-colour-blue: #89b4fa;
-    --uc-identity-colour-turquoise: #94e2d5;
-    --uc-identity-colour-green: #a6e3a1;
-    --uc-identity-colour-yellow: #f9e2af;
-    --uc-identity-colour-orange: #fab387;
-    --uc-identity-colour-red: #f38ba8;
-    --uc-identity-colour-pink: #f5c2e7;
-    --uc-identity-colour-purple: #cba6f7;
+    --uc-identity-colour-blue: var(--catppuccin-blue);
+    --uc-identity-colour-turquoise: var(--catppuccin-teal);
+    --uc-identity-colour-green: var(--catppuccin-green);
+    --uc-identity-colour-yellow: var(--catppuccin-yellow);
+    --uc-identity-colour-orange: var(--catppuccin-peach);
+    --uc-identity-colour-red: var(--catppuccin-red);
+    --uc-identity-colour-pink: var(--catppuccin-pink);
+    --uc-identity-colour-purple: var(--catppuccin-mauve);
 
     /*  Cascades main Colour Scheme */
-    --uc-base-colour: #1e1e2e;
-    --uc-highlight-colour: #181825;
-    --uc-inverted-colour: #cdd6f4;
-    --uc-muted-colour: #6c7086;
+    --uc-base-colour: var(--catppuccin-base);
+    --uc-highlight-colour: var(--catppuccin-mantle);
+    --uc-inverted-colour: var(--catppuccin-text);
+    --uc-muted-colour: var(--catppuccin-overlay0);
     --uc-accent-colour: var(--uc-identity-colour-purple);
+
+    /* Additional Colours */
+    --uc-selected-tab: var(--catppuccin-base);
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
+    /* Catppuccin Latte Colours */
+    --catppuccin-rosewater: #dc8a78;
+    --catppuccin-flamingo: #dd7878;
+    --catppuccin-pink: #ea76cb;
+    --catppuccin-mauve: #8839ef;
+    --catppuccin-red: #d20f39;
+    --catppuccin-maroon: #e64553;
+    --catppuccin-peach: #fe640b;
+    --catppuccin-yellow: #df8e1d;
+    --catppuccin-green: #40a02b;
+    --catppuccin-teal: #179299;
+    --catppuccin-sky: #04a5e5;
+    --catppuccin-sapphire: #209fb5;
+    --catppuccin-blue: #1e66f5;
+    --catppuccin-lavender: #7287fd;
+    --catppuccin-text: #4c4f69;
+    --catppuccin-subtext1: #5c5f77;
+    --catppuccin-subtext0: #6c6f85;
+    --catppuccin-overlay2: #7c7f93;
+    --catppuccin-overlay1: #8c8fa1;
+    --catppuccin-overlay0: #9ca0b0;
+    --catppuccin-surface2: #acb0be;
+    --catppuccin-surface1: #bcc0cc;
+    --catppuccin-surface0: #ccd0da;
+    --catppuccin-base: #eff1f5;
+    --catppuccin-mantle: #e6e9ef;
+    --catppuccin-crust: #dce0e8;
+
     /* These colours are (mainly) used by the
      Container Tabs Plugin */
-    --uc-identity-colour-blue: #1e66f5;
-    --uc-identity-colour-turquoise: #179299;
-    --uc-identity-colour-green: #40a02b;
-    --uc-identity-colour-yellow: #df8e1d;
-    --uc-identity-colour-orange: #fe640b;
-    --uc-identity-colour-red: #d20f39;
-    --uc-identity-colour-pink: #d20f39;
-    --uc-identity-colour-purple: #8839ef;
+    --uc-identity-colour-blue: var(--catppuccin-blue);
+    --uc-identity-colour-turquoise: var(--catppuccin-teal);
+    --uc-identity-colour-green: var(--catppuccin-green);
+    --uc-identity-colour-yellow: var(--catppuccin-yellow);
+    --uc-identity-colour-orange: var(--catppuccin-peach);
+    --uc-identity-colour-red: var(--catppuccin-red);
+    --uc-identity-colour-pink: var(--catppuccin-pink);
+    --uc-identity-colour-purple: var(--catppuccin-mauve);
 
     /*  Cascades main Colour Scheme */
-    --uc-base-colour: #eff1f5;
-    --uc-highlight-colour: #dce0e8;
-    --uc-inverted-colour: #4c4f69;
-    --uc-muted-colour: #9ca0b0;
+    --uc-base-colour: var(--catppuccin-base);
+    --uc-highlight-colour: var(--catppuccin-crust);
+    --uc-inverted-colour: var(--catppuccin-text);
+    --uc-muted-colour: var(--catppuccin-overlay0);
     --uc-accent-colour: var(--uc-identity-colour-purple);
+
+    /* Additional Colours */
+    --uc-selected-tab: var(--catppuccin-surface0);
   }
 }
 
